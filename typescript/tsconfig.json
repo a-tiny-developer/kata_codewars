@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": [
+      "ES2020"
+    ],
+    "newLine": "LF",
+    "noEmitHelpers": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "target": "ES2020",
+    "baseUrl": ".",
+    "paths": {
+      "immutability-helper": [
+        "."
+      ]
+    },
+    "strict": true,
+  },
+}
