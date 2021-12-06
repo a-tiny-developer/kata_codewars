@@ -1,13 +1,16 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.removeChar = void 0;
 function removeChar(str) {
     return str.substring(1, str.length - 1);
 }
 exports.removeChar = removeChar;
-var chai_1 = require("chai");
-describe('removeChar', function () {
-    it('basic tests', function () {
+// export function removeChar(str: string): string {
+//     return str.slice(1, -1);
+// }
+const chai_1 = require("chai");
+describe('removeChar', () => {
+    it('basic tests', () => {
         chai_1.assert.equal(removeChar('eloquent'), 'loquen');
         chai_1.assert.equal(removeChar('country'), 'ountr');
         chai_1.assert.equal(removeChar('person'), 'erso');

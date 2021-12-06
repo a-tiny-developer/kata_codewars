@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.even_or_odd = void 0;
 function even_or_odd(n) {
     if (n % 2 === 0) {

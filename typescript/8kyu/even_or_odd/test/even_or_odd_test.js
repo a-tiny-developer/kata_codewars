@@ -1,7 +1,7 @@
 "use strict";
-exports.__esModule = true;
-var solution = require("../solution");
-var chai_1 = require("chai");
+Object.defineProperty(exports, "__esModule", { value: true });
+const solution = require("../solution");
+const chai_1 = require("chai");
 describe("solution", function () {
     it("basicTests", function () {
         chai_1.assert.equal(solution.even_or_odd(2), "Even");

@@ -1,11 +1,11 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.boolToWord = void 0;
-var boolToWord = function (bool) {
+const boolToWord = (bool) => {
     return bool ? "Yes" : "No";
 };
 exports.boolToWord = boolToWord;
-var chai_1 = require("chai");
+const chai_1 = require("chai");
 describe("boolToWord", function () {
     it("Sample tests", function () {
         chai_1.assert.equal((0, exports.boolToWord)(true), "Yes");
