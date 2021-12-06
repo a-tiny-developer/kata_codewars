@@ -2,7 +2,7 @@
   "compilerOptions": {
     "module": "commonjs",
     "lib": [
-      "ES2020"
+      "ES2021",
     ],
     "newLine": "LF",
     "noEmitHelpers": true,
@@ -12,7 +12,7 @@
     "noUnusedParameters": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "target": "ES2020",
+    "target": "ES2021",
     "baseUrl": ".",
     "paths": {
       "immutability-helper": [
