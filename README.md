@@ -1,5 +1,5 @@
 # kata_codewars
 
-## Rust, Python, Dart, Go, Typescript
+## Rust, Dart, Python, Go, Typescript
 
 [codewars](https://www.codewars.com)
