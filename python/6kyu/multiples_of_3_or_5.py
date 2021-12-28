@@ -5,6 +5,13 @@ def solution(number: int) -> int:
     return sum(x for x in range(1, number) if x % 5 == 0 or x % 3 == 0)
 
 
+# def solution(number):
+#   threes = (number - 1) / 3
+#   fives = (number - 1) / 5
+#   fifteens = (number - 1) / 15
+#   return 3 * threes * (threes + 1) / 2 + 5 * fives * (fives + 1) / 2 - 15 * fifteens * (fifteens + 1) / 2
+
+
 @test.describe("Sample tests")
 def sample_tests():
 
