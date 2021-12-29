@@ -5,8 +5,11 @@ class Challenge {
     static solution(number) {
         let sum = 0;
         for (let i = 3; i < number; i++) {
-            sum += i % 3 == 0 &  ? true : false;
+            if (i % 3 == 0 || i % 5 == 0) {
+                sum += i;
+            }
         }
+        return sum;
     }
 }
 exports.Challenge = Challenge;
