@@ -1,4 +1,3 @@
-import string
 import codewars_test as test
 
 
