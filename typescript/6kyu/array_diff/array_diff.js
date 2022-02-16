@@ -1,15 +1,13 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.arrayDiff = void 0;
-function arrayDiff(a, b) {
-    return a.filter(x => !b.includes(x));
-}
-exports.arrayDiff = arrayDiff;
-// * Better performance
 // export function arrayDiff(a: number[], b: number[]): number[] {
-//     const bSet = new Set(b);
-//     return a.filter(value => !bSet.has(value));
+//     return a.filter(x => !b.includes(x));
 // }
+Object.defineProperty(exports, "__esModule", { value: true });
+// * Better performance
+function arrayDiff(a, b) {
+    const setB = new Set(b);
+    return a.filter(value => !setB.has(value));
+}
 const chai_1 = require("chai");
 describe('Basic tests', () => {
     it('Basic test should work', () => {
