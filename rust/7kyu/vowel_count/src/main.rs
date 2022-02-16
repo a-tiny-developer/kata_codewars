@@ -1,4 +1,6 @@
-fn main() {}
+fn main() {
+    vowel_count("dasf");
+}
 
 fn get_count(string: &str) -> usize {
     string
@@ -7,11 +9,11 @@ fn get_count(string: &str) -> usize {
         .count()
 }
 
-// fn get_count(string: &str) -> usize {
-//     string.chars().filter(|&c| "aeiou".contains(c)).count()
-// }
+fn vowel_count(string: &str) -> usize {
+    string.chars().filter(|&c| "aeiou".contains(c)).count()
+}
 
 #[test]
 fn my_tests() {
-    assert_eq!(get_count("abracadabra"), 5);
+    assert_eq!(vowel_count("abracadabra"), 5);
 }

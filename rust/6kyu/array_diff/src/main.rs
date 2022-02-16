@@ -1,14 +1,14 @@
 fn main() {}
 
-fn array_diff<T: PartialEq>(a: Vec<T>, b: Vec<T>) -> Vec<T> {
-    a.into_iter().filter(|x| !b.contains(x)).collect()
-}
+// fn array_diff<T: PartialEq>(a: Vec<T>, b: Vec<T>) -> Vec<T> {
+//     a.into_iter().filter(|x| !b.contains(x)).collect()
+// }
 
 // * Clever and fast
-// fn array_diff<T: PartialEq>(mut a: Vec<T>, b: Vec<T>) -> Vec<T> {
-//     a.retain(|x| !b.contains(x));
-//     a
-// }
+fn array_diff<T: PartialEq>(mut a: Vec<T>, b: Vec<T>) -> Vec<T> {
+    a.retain(|x| !b.contains(x));
+    a
+}
 
 #[cfg(test)]
 mod tests {

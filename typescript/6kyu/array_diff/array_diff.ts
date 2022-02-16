@@ -1,12 +1,12 @@
-export function arrayDiff(a: number[], b: number[]): number[] {
-    return a.filter(x => !b.includes(x));
-}
+// export function arrayDiff(a: number[], b: number[]): number[] {
+//     return a.filter(x => !b.includes(x));
+// }
 
 // * Better performance
-// export function arrayDiff(a: number[], b: number[]): number[] {
-//     const bSet = new Set(b);
-//     return a.filter(value => !bSet.has(value));
-// }
+function arrayDiff(a: number[], b: number[]): number[] {
+    const setB = new Set(b);
+    return a.filter(value => !setB.has(value));
+}
 
 import { expect } from 'chai';
 

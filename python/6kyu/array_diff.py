@@ -1,14 +1,14 @@
 import codewars_test as test
 
 
-def array_diff(a: list[int], b: list[int]) -> list[int]:
-    return [x for x in a if x not in b]
+# def array_diff(a: list[int], b: list[int]) -> list[int]:
+#     return [x for x in a if x not in b]
 
 
 # * Better performance
-# def array_diff(a, b):
-#     set_b = set(b)
-#     return [i for i in a if i not in set_b]
+def array_diff(a: list[int], b: list[int]) -> list[int]:
+    set_b = set(b)
+    return [x for x in a if x not in set_b]
 
 
 @test.describe("Fixed Tests")

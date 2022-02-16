@@ -1,8 +1,8 @@
 import codewars_test as test
 
 
-def get_count(sentence: str) -> int:
-    return sum(1 for x in sentence if x.lower() in "aeiou")
+def vowel_count(sentence: str) -> int:
+    return sum(1 for x in sentence if x in "aeiou")
 
 
 # def getCount(s):
