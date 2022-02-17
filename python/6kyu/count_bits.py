@@ -1,8 +1,11 @@
 import codewars_test as test
 
 
+# def count_bits(n: int) -> int:
+#     return bin(n).count("1")
+
 def count_bits(n: int) -> int:
-    return bin(n).count("1")
+    return n.bit_count()
 
 
 # * Performance?
